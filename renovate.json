@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "npm": {
+    "extends": [":pinAllExceptPeerDependencies"],
+    "postUpdateOptions": ["npmDedupe"]
+  },
+  "force": {
+    "constraints": {
+      "node": "^20.9.0",
+      "npm": "^10.1.0"
+    }
+  }
+}
